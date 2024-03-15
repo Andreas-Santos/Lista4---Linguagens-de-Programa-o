@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscrição</title>
+</head>
+<body>
+    <form action="https://65f4a4def54db27bc022293e.mockapi.io/curso/dados" method="post">
+        <fieldset>
+            <legend>Formulário de Inscrição</legend>
+            <h3>Curso</h3>
+                <p>
+                    <label for="curso">Curso*:</label>
+                    <select name="curso" id="curso" required>
+                        <option value="sel" selected>Selecione</option>
+                        <option value="html">HTML</option>
+                        <option value="css">CSS</option>
+                        <option value="js">JavaScript</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="dtIngresso">Data de Início*:</label>
+                    <select name="dtIngresso" id="dtIngresso" required>
+                        <option value="sel">Selecione</option>
+                        <option value="01/04">01 de Abril de 2024</option>
+                        <option value="08/04">08 de Abril de 2024</option>
+                        <option value="15/04">15 de Abril de 2024</option>
+                        <option value="22/04">22 de Abril de 2024</option>
+                    </select>
+                </p>
+                <p><b>Valor: </b>R$ 300,00</p>
+                <p>
+                    <label for="pagamento">Forma de Parcelamento*:</label>
+                    <select name="pagamento" id="pagamento" required>
+                        <option value="sel">Selecione</option>
+                        <option value="1parcela">1x R$ 300,00</option>
+                        <option value="2parcelas">2x R$ 150,00</option>
+                        <option value="3parcelas">3x R$ 100,00</option>
+                    </select>
+                </p>
+                <p><a href="cursosDeExtensão.html">Retornar a página inicial</a></p>
+            <h3>Dados do Aluno</h2>
+                <p>
+                    <label for="nome">Nome*:</label>
+                    <input type="text" name="nome" id="nome" placeholder="Nome completo" required>
+                </p>
+                <p>
+                    <label for="tel">Telefone:</label>
+                    <input type="tel" name="tel" id="tel" placeholder="(XX)XXXX-XXXX">
+                </p>
+                <p>
+                    <label for="cel">Celular*:</label>
+                    <input type="tel" name="cel" id="cel" placeholder="(XX)XXXXX-XXXX" required>
+                </p>
+                <p>
+                    <label for="email">E-mail*:</label>
+                    <input type="email" name="email" id="email" required>
+                </p>
+                <p>
+                    <label for="cor">Cor*:</label>
+                    <select name="cor" id="cor" required>
+                        <option value="sel" selected>Selecione</option>
+                        <option value="branca">Branca</option>
+                        <option value="preta">Preta</option>
+                        <option value="parda">Parda</option>
+                        <option value="amarela">Amarela</option>
+                        <option value="indigena">Indígena</option>
+                    </select>
+                </p>
+                <fieldset>
+                    <legend>Endereço</legend>
+                    <p>
+                        <label for="rua">Rua:</label>
+                        <input type="text" name="rua" id="rua">
+                    </p>
+                    <p>
+                        <label for="num">Número:</label>
+                        <input type="number" name="num" id="num">
+                    </p>
+                    <p>
+                        <label for="bairro">Bairro:</label>
+                        <input type="text" name="bairro" id="bairro">
+                    </p>
+                    <p>
+                        <label for="cidade">Cidade:</label>
+                        <input type="text" name="cidade" id="cidade">
+                    </p>
+                    <p>
+                        <label for="cep">CEP:</label>
+                        <input type="text" name="cep" id="cep">
+                    </p>
+                    <p>
+                        <label for="compl">Complemento:</label>
+                        <input type="text" name="compl" id="compl">
+                    </p>
+                    <p>
+                        <label for="estado">Estado:</label>
+                        <select name="estado" id="estado">
+                            <option value="sel" selected>Selecione</option>
+                            <option value="AC">Acre</option>
+                            <option value="AL">Alagoas</option>
+                            <option value="AP">Amapá</option>
+                            <option value="AM">Amazonas</option>
+                            <option value="BA">Bahia</option>
+                            <option value="CE">Ceará</option>
+                            <option value="ES">Espírito Santos</option>
+                            <option value="GO">Goiás</option>
+                            <option value="MA">Maranhão</option>
+                            <option value="MT">Mato Grosso</option>
+                            <option value="MS">Mato Grosso do Sul</option>
+                            <option value="MG">Minas Gerais</option>
+                            <option value="PA">Pará</option>
+                            <option value="PB">Paraíba</option>
+                            <option value="PR">Paraná</option>
+                            <option value="PE">Pernambuco</option>
+                            <option value="PI">Piauí</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="RN">Rio Grande do Norte</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="RO">Rondônia</option>
+                            <option value="RR">Roraima</option>
+                            <option value="SC">Santa Catarina</option>
+                            <option value="SP">São Paulo</option>
+                            <option value="SE">Sergipe</option>
+                            <option value="TO">Tocantins</option>
+                            <option value="DF">Distrito Federal</option>
+                        </select>
+                    </p>
+                </fieldset>
+                <h3>Dados do Pai do aluno</h2>
+                    <p>
+                        <label for="nomePai">Nome*:</label>
+                        <input type="text" name="nomePai" id="nomePai" placeholder="Nome completo" required>
+                    </p>
+                    <p>
+                        <label for="dtPai">Data de Nascimento:</label>
+                        <input type="date" name="dtPai" id="dtPai">
+                    </p>
+                    <p>
+                        <label for="natPai">Naturalidade:</label>
+                        <input type="text" name="natPai" id="natPai">
+                    </p>
+                    <p>
+                        <label for="instPai">Instrução:</label>
+                        <input type="text" name="instPai" id="instPai">
+                    </p>
+                    <p>
+                        <label for="profPai">Profissão:</label>
+                        <input type="text" name="profPai" id="profPai">
+                    </p>
+                    <p>
+                        <label for="celPai">Celular*:</label>
+                        <input type="tel" name="celPai" id="celPai" placeholder="(XX)XXXXX-XXXX" required>
+                    </p>
+                    <p>
+                        <label for="emailPai">E-mail*:</label>
+                        <input type="email" name="emailPai" id="emailPai" required>
+                    </p>
+                    <p>
+                        <label for="cpfPai">CPF*:</label>
+                        <input type="text" name="cpfPai" id="cpfPai" required>
+                    </p>
+                    <p>
+                        <label for="">É responsável financeiro?</label>
+                        <input type="radio" name="respFinanPai" id="sim" value="sim">
+                            <label for="">Sim</label>
+                        <input type="radio" name="respFinanPai" id="nao" value="nao">
+                            <label for="">Não</label>
+                    </p>
+                <h3>Dados da Mãe do aluno</h2>
+                    <p>
+                        <label for="nomeMae">Nome*:</label>
+                        <input type="text" name="nomeMae" id="nomeMae" placeholder="Nome completo" required>
+                    </p>
+                    <p>
+                        <label for="dtMae">Data de Nascimento:</label>
+                        <input type="date" name="dtMae" id="dtMae">
+                    </p>
+                    <p>
+                        <label for="natMae">Naturalidade:</label>
+                        <input type="text" name="natMae" id="natMae">
+                    </p>
+                    <p>
+                        <label for="instMae">Instrução:</label>
+                        <input type="text" name="instMae" id="instMae">
+                    </p>
+                    <p>
+                        <label for="profMae">Profissão:</label>
+                        <input type="text" name="profMae" id="profMae">
+                    </p>
+                    <p>
+                        <label for="celMae">Celular*:</label>
+                        <input type="tel" name="celMae" id="celMae" placeholder="(XX)XXXXX-XXXX" required>
+                    </p>
+                    <p>
+                        <label for="emailMae">E-mail*:</label>
+                        <input type="email" name="emailMae" id="emailMae" required>
+                    </p>
+                    <p>
+                        <label for="cpfMae">CPF*:</label>
+                        <input type="text" name="cpfMae" id="cpfMae" required>
+                    </p>
+                    <p>
+                        <label for="">É responsável financeiro?</label>
+                        <input type="radio" name="respFinanMae" id="sim" value="sim">
+                            <label for="">Sim</label>
+                        <input type="radio" name="respFinanMae" id="nao" value="nao">
+                            <label for="">Não</label>
+                    </p>
+                    <p>
+                        <button type="submit">Gravar</button>
+                        <button type="reset">Limpar</button>
+                    </p>
+        </fieldset>
+    </form>
+</body>
+</html>
